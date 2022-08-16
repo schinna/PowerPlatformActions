@@ -12,12 +12,12 @@ on:
       source_environment:
         description: 'Source environment (Dynamics URL)'
         required: true
-        default: 'TestSolution'
+        default: 'https://org9704ef5b.crm.dynamics.com/'
 
       target_environment:
         description: 'Target environment (Dynamics URL)'
         required: true
-        default: 'TestSolution'
+        default: 'https://org9704ef5b.crm.dynamics.com/'
     
 env:
   user_name: chinnasrihari@yahoo.com
