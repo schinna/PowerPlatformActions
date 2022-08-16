@@ -36,5 +36,14 @@ jobs:
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          repository: schinna/PowerPlatformActions
+      
+      - name: who-am-i action
+        uses: microsoft/powerplatform-actions/who-am-i @v0
+        with:
+          environment-url: ${{github.event.inputs.source_environment}}
+          user-name: ${{env.user_name}}
+          password-secret: ${{env.secret}}
 
 
