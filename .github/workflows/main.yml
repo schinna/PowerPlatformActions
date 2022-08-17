@@ -35,9 +35,10 @@ jobs:
         run: echo "release_date=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           path: ${{ github.repository }}
+          fetch-depth: 0
       
       - name: who-am-i action
         uses: microsoft/powerplatform-actions/who-am-i @v0
