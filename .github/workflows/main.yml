@@ -12,16 +12,16 @@ on:
       source_environment:
         description: 'Source environment (Dynamics URL)'
         required: true
-        default: 'https://org9704ef5b.crm.dynamics.com/'
+        default: 'https://orgee9eb49c.crm.dynamics.com/'
 
       target_environment:
         description: 'Target environment (Dynamics URL)'
         required: true
-        default: 'https://org9704ef5b.crm.dynamics.com/'
+        default: 'https://orgab6ed293.crm5.dynamics.com/'
     
 env:
-  user_name: hchinna@chinnainfotech.onmicrosoft.com
-  secret: ${{secrets.POWERPLATFORMORGSECRET}}
+  user_name: ChinnaSrihari@41c3jq.onmicrosoft.com
+  secret: Sharcdot!300
   solution_export_folder: out/exported/${{github.event.inputs.solution_name}}
   solution_target_folder: solutions/${{github.event.inputs.solution_name}}
   
